@@ -13,6 +13,8 @@ namespace curs2
         {
             // ONLY NATURAL NUMBER INPUT
 
+            // problema cu aceasta solutie este ca nu eficienta atunci cand a si b sunt numere mari. 
+            // solutia implica o simpla formula in care se fac 3-4 operatii aritmetice. 
             Console.Write("Inceputul intervalului (a): ");
             string line1 = Console.ReadLine();
             int a = int.Parse(line1);
@@ -28,7 +30,7 @@ namespace curs2
             int n = 0;
 
             // rezolvare de info
-            for (int i = a; i < b; i++) {
+            for (int i = a; i < b; i++) { // aici ar trebui i <=b;
                 if (i % k == 0) {
                     n++;
                 }
@@ -38,7 +40,7 @@ namespace curs2
             Console.WriteLine("___________________________________");
 
             // rezolvare de mate
-
+            // asta e rezolvarea la care ma asteptam. formula e corecta. 
             int mate = (b / k) - (a - 1) / k;
             Console.WriteLine($"{mate}");
 
