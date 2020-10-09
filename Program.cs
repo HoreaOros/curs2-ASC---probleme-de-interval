@@ -40,7 +40,7 @@ namespace curs2
             Console.WriteLine("___________________________________");
 
             // rezolvare de mate
-
+            // asta e rezolvarea la care ma asteptam. formula e corecta. 
             int mate = (b / k) - (a - 1) / k;
             Console.WriteLine($"{mate}");
 
